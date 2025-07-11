@@ -3,6 +3,7 @@ using UnityEngine;
 public class MoveScript : MonoBehaviour
 {
     Animator animator;
+    [SerializeField] private float speed = 2;
     
     // Start is called before the first frame update
     void Start()
@@ -24,7 +25,7 @@ public class MoveScript : MonoBehaviour
         Vector3 movement = new Vector3(horizontalInput, 0, verticalInput);
         
         // Move the object by the movement vector
-        transform.Translate(movement * Time.deltaTime);
+        transform.Translate(movement * (speed * Time.deltaTime));
         
         animator.SetBool("IsMoving", horizontalInput > 0.1 || verticalInput > 0.1 || horizontalInput < -0.1 || verticalInput < -0.1);
     }
