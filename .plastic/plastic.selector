@@ -1,4 +1,0 @@
-repository "Crimson Phantom/Crimson Phantom@20066644445860@cloud"
-  path "/"
-    br "/main"
-    co "/main"
