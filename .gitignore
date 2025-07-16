@@ -102,4 +102,4 @@ InitTestScene*.unity*
 .plastic/
 
 # Ignore JetBrains Rider solution files
-.idea
+.idea/
